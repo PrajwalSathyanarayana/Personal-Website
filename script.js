@@ -62,10 +62,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── Smooth scroll ── */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]:not(.masked-contact)').forEach(anchor => {
     anchor.addEventListener('click', e => {
       const target = document.querySelector(anchor.getAttribute('href'));
       if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); }
+    });
+  });
+
+  /* ── Click-to-reveal masked contacts ── */
+  document.querySelectorAll('.masked-contact').forEach(el => {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (this.dataset.revealed === 'true') {
+        const type = this.dataset.type;
+        const val  = this.dataset.value;
+        if (type === 'email') window.location.href = 'mailto:' + val;
+        else if (type === 'tel') window.location.href = 'tel:' + val.replace(/-/g, '');
+        return;
+      }
+      this.dataset.revealed = 'true';
+      this.classList.add('revealed');
+      this.textContent = this.dataset.value;
+      if (this.dataset.href) this.href = this.dataset.href;
+      this.title = 'Click to open';
     });
   });
 
