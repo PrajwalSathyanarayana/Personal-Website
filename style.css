@@ -696,3 +696,36 @@ section { padding: 6rem 0; position: relative; z-index: 1; }
   .pub-entry { grid-template-columns: 1fr; }
   .pub-left { flex-direction: row; }
 }
+
+/* ── Masked contact reveal ── */
+.masked-contact {
+  cursor: pointer;
+  color: var(--ink-light);
+  border-bottom: 1px dashed var(--rule);
+  transition: color var(--transition), border-color var(--transition);
+  user-select: none;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+.masked-contact:hover {
+  color: var(--brown);
+  border-color: var(--brown-lt);
+}
+.masked-contact.revealed {
+  color: var(--ink);
+  border-bottom: none;
+  font-style: normal;
+  user-select: text;
+  letter-spacing: normal;
+}
+.footer-links .masked-contact {
+  color: inherit;
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+.footer-links .masked-contact:hover {
+  color: var(--brown-lt);
+  border-bottom-color: var(--brown-lt);
+}
+.footer-links .masked-contact.revealed {
+  border-bottom: none;
+}
