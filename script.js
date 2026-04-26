@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Typed hero subtitle ── */
   const phrases = [
-    'Data Scientist',
+    'AI Engineer',
+    'LLM Systems Builder',
+    'Agentic Workflow Designer',
     'ML Engineer',
-    'AI Systems Builder',
-    'LLM Workflow Designer',
-    'AWS Data Engineer',
+    'AWS AI Engineer',
   ];
   let phraseIdx = 0, charIdx = 0, deleting = false;
   const typedEl = document.querySelector('.typed-text');
