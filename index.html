@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prajwal Sathyanarayana — Data Scientist</title>
+  <title>Prajwal Sathyanarayana — AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Cormorant+SC:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -24,6 +24,7 @@
       <li><a href="#publications" class="nav-link">Publications</a></li>
       <li><a href="#education"   class="nav-link">Education</a></li>
     </ul>
+    <a href="Prajwal Sathyanarayana Resume.pdf" download class="nav-resume" id="navResume">&#8595; Resume</a>
     <a href="mailto:prajwals@arizona.edu" class="nav-cta">Hire Me</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -38,6 +39,7 @@
       <li><a href="#projects"    class="mob-link">Projects</a></li>
       <li><a href="#publications" class="mob-link">Publications</a></li>
       <li><a href="#education"   class="mob-link">Education</a></li>
+      <li><a href="Prajwal Sathyanarayana Resume.pdf" download class="mob-link mob-resume">&#8595; Download Resume</a></li>
     </ul>
   </div>
 
@@ -47,7 +49,7 @@
       <div class="hero-meta reveal">
         <span class="issue-label">Portfolio · Vol. I · 2026</span>
         <span class="issue-rule"></span>
-        <span class="issue-tag">Data Science &amp; Machine Learning</span>
+        <span class="issue-tag">AI Engineering &amp; Machine Learning</span>
       </div>
       <div class="hero-grid">
         <div class="hero-main">
@@ -56,14 +58,15 @@
             <em class="name-last">Sathyanarayana</em>
           </h1>
           <p class="hero-deck reveal">
-            Building end-to-end ML &amp; AI systems that turn messy data<br/>
-            into decisions. 3+ years shipping models at scale.
+            Building and shipping AI/ML powered products end to end —<br/>
+            LLM systems, agentic workflows, and models at scale.
           </p>
           <div class="hero-byline reveal">
             <span class="typed-text"></span><span class="cursor">|</span>
           </div>
           <div class="hero-actions reveal">
             <a href="#experience" class="btn-primary">View My Work</a>
+            <a href="Prajwal Sathyanarayana Resume.pdf" download class="btn-ghost">&#8595; Download Resume</a>
             <a href="mailto:prajwals@arizona.edu" class="btn-ghost">Get In Touch &rarr;</a>
           </div>
           <div class="hero-socials reveal">
@@ -112,16 +115,17 @@
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <h3 class="about-lede">I turn data chaos<br/><em>into clarity.</em></h3>
-          <p>I'm a Data Scientist pursuing my Master's at the University of Arizona, with 3+ years of hands-on experience building and deploying end-to-end ML and AI-driven systems. My work spans credit risk modeling, reinforcement learning pipelines, revenue forecasting, and AI-first workflow automation.</p>
-          <p>I care deeply about the full lifecycle — from translating ambiguous stakeholder needs into clear specifications, through building reliable pipelines, to shipping models that make a measurable difference in production.</p>
-          <p>Currently based in Tucson, AZ, open to full-time roles in Data Science, ML Engineering, and AI Product.</p>
+          <h3 class="about-lede">I build AI systems<br/><em>that ship.</em></h3>
+          <p>I'm an AI Engineer pursuing my Master's in Data Science at the University of Arizona (GPA 3.9), with 3+ years of experience building and shipping AI/ML powered products end to end — including LLM-based systems and agentic workflows.</p>
+          <p>Strong working understanding of prompt engineering, tool calling, retrieval and context construction, memory usage, and model evaluation. My work spans document intelligence pipelines, credit risk modeling, RL experiment infrastructure, and revenue forecasting automation.</p>
+          <p>Currently based in Tucson, AZ, open to full-time AI Engineer, ML Engineer, and Applied Scientist roles.</p>
           <div class="about-tags">
-            <span class="tag-item">Machine Learning</span>
             <span class="tag-item">LLM Systems</span>
-            <span class="tag-item">Data Engineering</span>
+            <span class="tag-item">Agentic Workflows</span>
+            <span class="tag-item">RAG &amp; Retrieval</span>
+            <span class="tag-item">Prompt Engineering</span>
             <span class="tag-item">AWS</span>
-            <span class="tag-item">Causal Analysis</span>
+            <span class="tag-item">Model Evaluation</span>
           </div>
         </div>
         <div class="about-card reveal">
@@ -154,6 +158,27 @@
 
         <div class="tl-item reveal">
           <div class="tl-meta">
+            <span class="tl-date">Jan 2026 &ndash; Present</span>
+            <span class="tl-category">EdTech</span>
+          </div>
+          <div class="tl-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role">AI Engineer <span class="tl-badge">Capstone</span></h3>
+                <p class="tl-org">Axio Education &middot; INFO 698</p>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Engineered an async FastAPI document intelligence pipeline using PyMuPDF and pdfplumber, achieving <strong>&ge;88% table extraction accuracy</strong> and &lt;2s median processing time across 4 document modalities.</li>
+              <li>Integrated Gemini 1.5 Vision multimodal LLM to generate anchored margin feedback with per-region confidence scoring, <strong>automating evaluation of 10+ questions per submission</strong> at &ge;87% model confidence.</li>
+              <li>Built a Gemini-powered document classification layer that auto-routes submissions to the correct grading pipeline, <strong>eliminating manual classification for 100%</strong> of self-contained assignment formats.</li>
+            </ul>
+            <div class="tl-tags"><span>FastAPI</span><span>Gemini 1.5 Vision</span><span>PyMuPDF</span><span>LLM</span><span>Python</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-meta">
             <span class="tl-date">Aug 2025 &ndash; Dec 2025</span>
             <span class="tl-category">Healthcare</span>
           </div>
@@ -165,11 +190,11 @@
               </div>
             </div>
             <ul class="tl-bullets">
-              <li>Designed and delivered AI-first workflows for complex knowledge work by building Python- and SQL-based ETL pipelines for encounter, ZIP, provider, and procedure data — <strong>improving data accessibility by 35%</strong> with git-based version control.</li>
-              <li>Translated messy stakeholder needs into clear specs, prompts, and expected behaviors, enabling standardized reporting structures across downstream analytics.</li>
-              <li>Automated reporting workflows using Python, <strong>reducing manual reconciliation effort by 40%</strong> while improving reliability and usefulness of surgical volume insights.</li>
+              <li>Owned end-to-end design of AI-first workflows for complex knowledge work by building Python and SQL pipelines to extract, transform, and load encounter and procedure data, <strong>improving data accessibility by 35%</strong>.</li>
+              <li>Designed reusable AI capabilities and evaluation pipelines by translating messy stakeholder needs into clear specs, prompts, and expected behaviors, enabling standardized reporting structures.</li>
+              <li>Defined clear success metrics for AI behavior and automated reporting workflows using Python, <strong>reducing manual reconciliation effort by 40%</strong> while improving reliability of downstream surgical volume insights.</li>
             </ul>
-            <div class="tl-tags"><span>Python</span><span>SQL</span><span>AI Workflows</span><span>ETL</span><span>Git</span></div>
+            <div class="tl-tags"><span>Python</span><span>SQL</span><span>AI Workflows</span><span>ETL</span><span>Evaluation Pipelines</span></div>
           </div>
         </div>
 
@@ -186,11 +211,11 @@
               </div>
             </div>
             <ul class="tl-bullets">
-              <li>Designed multi-step agent-like ML workflows for reinforcement learning experiments with planning, tool invocation, memory management, and refinement loops using Docker and AWS Lambda.</li>
-              <li>Built LLM-adjacent data analysis pipelines in Python to debug, compare variants, and analyze real interaction logs — <strong>improving experiment turnaround time by 30%</strong>.</li>
-              <li>Implemented evaluation and monitoring strategies to detect common failure modes, maintaining accuracy and reproducibility across RL pipelines.</li>
+              <li>Designed and iterated multi-step agentic workflows for reinforcement learning experiments, including planning, tool invocation, memory usage, and refinement loops to support large-scale simulations.</li>
+              <li>Built LLM-adjacent data analysis pipelines in Python to debug, compare variants, and analyze real interaction logs from high-frequency simulations, <strong>improving experiment turnaround time by 30%</strong>.</li>
+              <li>Implemented model output evaluations and monitoring strategies to detect common failure modes, maintaining accuracy and reproducibility across reinforcement learning pipelines.</li>
             </ul>
-            <div class="tl-tags"><span>Reinforcement Learning</span><span>Docker</span><span>AWS Lambda</span><span>Python</span><span>LLM</span></div>
+            <div class="tl-tags"><span>Reinforcement Learning</span><span>Agentic Workflows</span><span>LLM</span><span>Python</span><span>Docker</span></div>
           </div>
         </div>
 
@@ -203,15 +228,15 @@
             <div class="tl-card-top">
               <div>
                 <h3 class="tl-role">Data Scientist</h3>
-                <p class="tl-org">Cognizant</p>
+                <p class="tl-org">Cognizant &middot; Jul 2022 &ndash; Jul 2024</p>
               </div>
             </div>
             <ul class="tl-bullets">
-              <li>Built ML-powered Credit Risk Prediction pipelines in SQL and Python for scalable ingestion and context construction across multi-source financial datasets.</li>
-              <li>Collaborated with engineers and stakeholders to translate ambiguous requirements into clear specs, <strong>improving default risk detection accuracy by 18%</strong>.</li>
-              <li>Automated model inference using AWS SageMaker, <strong>reducing processing latency by 30%</strong> while maintaining strong system reliability.</li>
+              <li>Addressed high data processing overhead across multi-source financial datasets by architecting scalable SQL and Python pipelines, <strong>reducing cloud compute and data preparation costs by 25%</strong>.</li>
+              <li>Resolved costly false-positive default predictions by translating ambiguous requirements into strict engineering specs, <strong>improving detection accuracy by 18%</strong> and minimizing financial risk exposure.</li>
+              <li>Targeted excessive AWS resource consumption from inefficient model inference by automating pipelines via SageMaker and APIs, <strong>cutting latency by 30%</strong> and lowering cloud infrastructure spend by 20%.</li>
             </ul>
-            <div class="tl-tags"><span>AWS SageMaker</span><span>Credit Risk</span><span>Python</span><span>SQL</span><span>ML</span></div>
+            <div class="tl-tags"><span>AWS SageMaker</span><span>Credit Risk</span><span>Python</span><span>SQL</span><span>APIs</span></div>
           </div>
         </div>
 
@@ -228,11 +253,11 @@
               </div>
             </div>
             <ul class="tl-bullets">
-              <li>Designed agent-like analytical workflows for revenue forecasting using digital marketing data and AWS SageMaker, reducing forecast preparation time and improving cross-team alignment.</li>
-              <li>Used Python dashboards and raw interaction logs to debug forecasting outputs and <strong>improve operational efficiency by 35%</strong>.</li>
-              <li>Implemented data quality checks and evaluation pipelines to support reliable A/B testing in fast-moving, high-ambiguity environments.</li>
+              <li>Tackled high labor costs of manual revenue forecasting across business units by designing agent-like analytical workflows with tool-calling logic, <strong>reducing operational forecasting costs by 40%</strong>.</li>
+              <li>Mitigated expensive administrative bottlenecks in tracking system metrics by developing automated Python dashboards, <strong>improving operational efficiency by 35%</strong> and heavily reducing reporting overhead.</li>
+              <li>Prevented wasted operational spend on faulty A/B tests by implementing rigorous data quality checks and evaluation pipelines, stopping costly deployment of underperforming variants.</li>
             </ul>
-            <div class="tl-tags"><span>Forecasting</span><span>AWS SageMaker</span><span>A/B Testing</span><span>Dashboards</span></div>
+            <div class="tl-tags"><span>Forecasting</span><span>AWS SageMaker</span><span>A/B Testing</span><span>Python Dashboards</span></div>
           </div>
         </div>
 
@@ -254,39 +279,36 @@
           <div class="skill-kicker">Discipline I</div>
           <h3>AI &amp; LLM Systems</h3>
           <ul>
-            <li>LLM-based Systems &amp; RAG</li>
+            <li>Large Language Models (LLMs) &amp; RAG</li>
             <li>Vector Search &amp; Embeddings</li>
-            <li>Chunking &amp; Retrieval Strategies</li>
             <li>Prompt Engineering &amp; Tool Calling</li>
-            <li>Agent-like Workflows</li>
-            <li>Memory Management &amp; Refinement Loops</li>
-            <li>AI Evaluation &amp; Monitoring</li>
+            <li>Agentic Workflows &amp; Memory Management</li>
+            <li>Retrieval &amp; Context Construction</li>
+            <li>Model Evaluation &amp; Monitoring</li>
           </ul>
         </div>
 
         <div class="skill-card reveal">
           <div class="skill-kicker">Discipline II</div>
-          <h3>Programming &amp; Data</h3>
+          <h3>Languages &amp; Libraries</h3>
           <ul>
-            <li>Python &middot; SQL &middot; Pandas &middot; NumPy</li>
-            <li>Scikit-Learn &middot; LightGBM &middot; XGBoost</li>
-            <li>Machine Learning &amp; Statistics</li>
-            <li>Data Pipelines &amp; ETL</li>
-            <li>Dashboards &amp; Reporting</li>
-            <li>A/B Testing &amp; Experimentation</li>
-            <li>Digital Marketing Data</li>
+            <li>Python &middot; SQL &middot; C &middot; Java &middot; C++</li>
+            <li>Pandas &middot; NumPy &middot; Scikit-Learn</li>
+            <li>LightGBM &middot; XGBoost &middot; TensorFlow &middot; PyTorch</li>
+            <li>FastAPI &middot; REST APIs</li>
+            <li>Data Pipelines, ETL &amp; A/B Testing</li>
           </ul>
         </div>
 
         <div class="skill-card reveal">
           <div class="skill-kicker">Discipline III</div>
-          <h3>Cloud &amp; Platforms</h3>
+          <h3>Cloud &amp; DevOps</h3>
           <ul>
-            <li>AWS SageMaker</li>
-            <li>AWS Lambda &amp; Amazon RDS</li>
-            <li>Docker &amp; Containerization</li>
-            <li>REST APIs &amp; Microservices</li>
-            <li>Git &amp; Version Control</li>
+            <li>AWS SageMaker &middot; Lambda &middot; RDS</li>
+            <li>Docker &amp; Kubernetes</li>
+            <li>Terraform &amp; Infrastructure as Code</li>
+            <li>CI/CD &amp; GitHub Actions</li>
+            <li>PostgreSQL &amp; Version Control</li>
           </ul>
         </div>
 
@@ -296,9 +318,9 @@
           <ul>
             <li>Stakeholder Requirement Translation</li>
             <li>Clear Specs &amp; Success Metrics</li>
+            <li>AI-first Workflow Design</li>
             <li>Cross-functional Engineering Collab</li>
             <li>Fast Iteration &amp; Edge Case Handling</li>
-            <li>AI-first Workflow Design</li>
           </ul>
         </div>
 
@@ -399,7 +421,7 @@
             <p class="pub-venue">2022 International Conference on Disruptive Technologies for Multi-Disciplinary Research and Applications (CENTCON) &middot; Dec 2022</p>
             <p class="pub-abstract">A smart medication dispensing system combining machine learning, IoT, and cloud computing to automate drug delivery, reduce dispensing errors, and improve patient adherence.</p>
             <div class="pub-footer">
-              <a href="https://doi.org/10.1109/centcon56814.2022.10051452" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
+              <a href="https://doi.org/10.1109/CENTCON56610.2022.10051452" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
               <span class="pub-kw">IoT</span><span class="pub-kw">Cloud</span><span class="pub-kw">ML</span>
             </div>
           </div>
@@ -416,7 +438,7 @@
             <p class="pub-venue">2022 IEEE International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE) &middot; Apr 2022</p>
             <p class="pub-abstract">Design and implementation of a service robot capable of social interaction in hospital environments, reducing human contact during high-risk scenarios and improving patient monitoring.</p>
             <div class="pub-footer">
-              <a href="https://doi.org/10.1109/icdcece53908.2022.9792798" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
+              <a href="https://doi.org/10.1109/ICDCECE53908.2022.9792798" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
               <span class="pub-kw">Robotics</span><span class="pub-kw">Healthcare AI</span>
             </div>
           </div>
@@ -433,7 +455,7 @@
             <p class="pub-venue">2022 IEEE International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE) &middot; Apr 2022</p>
             <p class="pub-abstract">A comprehensive comparative analysis of technologies employed in automated medicine dispensing systems, evaluating accuracy, reliability, and scalability across approaches.</p>
             <div class="pub-footer">
-              <a href="https://doi.org/10.1109/icdcece53908.2022.9792925" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
+              <a href="https://doi.org/10.1109/ICDCECE53908.2022.9792921" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
               <span class="pub-kw">Medical Systems</span><span class="pub-kw">Automation</span>
             </div>
           </div>
@@ -450,7 +472,7 @@
             <p class="pub-venue">2021 International Conference on Disruptive Technologies for Multi-Disciplinary Research and Applications (CENTCON) &middot; Nov 2021</p>
             <p class="pub-abstract">An automated grading system leveraging OCR to digitize handwritten exam responses and sentence embeddings to semantically compare answers against model solutions.</p>
             <div class="pub-footer">
-              <a href="https://doi.org/10.1109/centcon52026.2021.9688088" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
+              <a href="https://doi.org/10.1109/CENTCON52345.2021.9688008" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
               <span class="pub-kw">NLP</span><span class="pub-kw">OCR</span><span class="pub-kw">Deep Learning</span>
             </div>
           </div>
@@ -467,7 +489,7 @@
             <p class="pub-venue">2021 International Conference on Recent Trends on Electronics, Information, Communication &amp; Technology (RTEICT) &middot; Aug 2021</p>
             <p class="pub-abstract">Implementation and evaluation of the A* pathfinding algorithm for intelligent navigation systems, exploring heuristic optimizations and real-world applicability in dynamic environments.</p>
             <div class="pub-footer">
-              <a href="https://doi.org/10.1109/rteict52294.2021.9573601" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
+              <a href="https://doi.org/10.1109/RTEICT52294.2021.9573801" target="_blank" class="pub-link">Read on IEEE Xplore &rarr;</a>
               <span class="pub-kw">Algorithms</span><span class="pub-kw">Navigation</span><span class="pub-kw">AI</span>
             </div>
           </div>
@@ -493,7 +515,7 @@
           <h3>Master of Science</h3>
           <p class="edu-major">Data Science</p>
           <p class="edu-school">University of Arizona</p>
-          <p class="edu-location">Tucson, Arizona</p>
+          <p class="edu-location">Tucson, Arizona &middot; GPA 3.9</p>
           <span class="edu-status current">In Progress</span>
         </div>
 
@@ -503,7 +525,7 @@
           <h3>Bachelor of Engineering</h3>
           <p class="edu-major">Computer Science</p>
           <p class="edu-school">Dayananda Sagar University</p>
-          <p class="edu-location">Bengaluru, India</p>
+          <p class="edu-location">Bengaluru, India &middot; GPA 3.6</p>
           <span class="edu-status done">Completed</span>
         </div>
 
